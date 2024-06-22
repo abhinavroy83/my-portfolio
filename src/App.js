@@ -13,6 +13,8 @@ import "@splidejs/react-splide/css/skyblue";
 import Contact from "./components/sections/contact";
 import Footer from "./components/footer";
 
+
+//test
 export default function App() {
   const scrollRef = React.useRef(null);
   const section1Ref = React.useRef(null);
