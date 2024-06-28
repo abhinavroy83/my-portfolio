@@ -43,7 +43,7 @@ const Footer = (props) => {
             </div>
           )}
         </div>
-        {CONFIG.design && (
+        {/* {CONFIG.design && (
           <div
             className="credits"
             onClick={() => {
@@ -52,7 +52,7 @@ const Footer = (props) => {
           >
             Design By: <b className="primary-color">{CONFIG.design[0].name}</b>
           </div>
-        )}
+        )} */}
         {CONFIG.footer[0].footerText && (
           <div className="footer-bottom-section">
             <div>{CONFIG.footer[0].footerText}</div>

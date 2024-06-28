@@ -12,6 +12,7 @@ import Projects from "./components/sections/projects";
 import "@splidejs/react-splide/css/skyblue";
 import Contact from "./components/sections/contact";
 import Footer from "./components/footer";
+import Skill from "./components/sections/skill";
 
 export default function App() {
   const scrollRef = React.useRef(null);
@@ -19,6 +20,7 @@ export default function App() {
   const section2Ref = React.useRef(null);
   const section3Ref = React.useRef(null);
   const section4Ref = React.useRef(null);
+  const section5Ref = React.useRef(null);
 
   const section1Visible = useIntersection(section1Ref, {
     threshold: 0.5
@@ -32,32 +34,40 @@ export default function App() {
   const section4Visible = useIntersection(section4Ref, {
     threshold: 0.5
   });
+  const section5Visible = useIntersection(section5Ref, {
+    threshold: 0.5
+  });
 
   const sectionsVisibility = {
     "1": [section1Ref, section1Visible],
     "2": [section2Ref, section2Visible],
     "3": [section3Ref, section3Visible],
-    "4": [section4Ref, section4Visible]
+    "4": [section4Ref, section4Visible],
+    "5": [section5Ref, section5Visible]
   };
 
   React.useEffect(() => {
+    console.log(sectionsVisibility);
     Object.keys(sectionsVisibility).map((key) => {
       if (sectionsVisibility[key][1]) {
+        console.log(Number(key) + 1);
         setGlobalState("nextSection", Number(key) + 1);
         return null;
       }
       return null;
     });
-  }, [section1Visible, section2Visible, section3Visible, section4Visible]);
+  }, [section1Visible, section2Visible, section3Visible, section4Visible, section5Visible]);
 
   return (
     <div className="App" ref={scrollRef}>
-      <ScrollDownArrow sectionsVisibility={sectionsVisibility} />
+      <ScrollDownArrow
+        sectionsVisibility={sectionsVisibility} />
       <Nav />
       <Hero sectionRef={section1Ref} />
       <About sectionRef={section2Ref} />
-      <Projects sectionRef={section3Ref} />
-      <Contact sectionRef={section4Ref} />
+      <Skill sectionRef={section3Ref}/>
+      <Projects sectionRef={section4Ref} />
+      <Contact sectionRef={section5Ref} />
       <Footer />
       <CheckScrollBar scrollRef={scrollRef} />
     </div>

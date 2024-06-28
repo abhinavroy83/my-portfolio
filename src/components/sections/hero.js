@@ -20,7 +20,6 @@ const Hero = (props) => {
           {CONFIG.hero[0].show_arrow_doodle && <Arrow />}
           <div className="hero-text-container">
             <div className="hero-title">
-            <AiFillAccountBook />
             <h1>{CONFIG.hero[0].first_line}&nbsp;</h1>
               <h1 className="primary-color">{CONFIG.hero[0].main_line}</h1>
             </div>
