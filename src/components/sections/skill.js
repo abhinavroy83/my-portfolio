@@ -5,6 +5,8 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { FaReact } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
+import { FaWordpress } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa6";
 
 const Skill = (props) => {
   console.log(props);
@@ -44,7 +46,7 @@ const Skill = (props) => {
             React
           </div>
           <div className="bg-[#00ADB5] group hover:text-[#00ADB5] hover:bg-white font-bold transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl w-[130px] object-cover border border-black justify-center h-[130px]">
-            <IoLogoJavascript 
+            <IoLogoJavascript
               size={45}
               className="group-hover:rotate-[360deg] transition-transform"
             />
@@ -57,63 +59,34 @@ const Skill = (props) => {
             />
             Mysql
           </div>
-
-          <div className="">
-            <div className="bg-white group transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl hover:bg-slate-100 w-[150px] object-cover border border-black justify-center h-[150px]">
-              {/* <img
-          className="w-[6.4rem] h-13"
-          src={`https://img.freepik.com/premium-vector/upcoming-events-announcement-megaphone-label-loudspeaker-speech-bubble_123447-5297.jpg`}
-          alt="logo"
-        /> */}
-              {/* <BiCalendarEvent
-            size={45}
-            className="group-hover:rotate-[360deg] transition-transform"
-          /> */}
-
-              <h1 className="text-[22px] text-center font-bold text-[#000] mt-3">
-                Events
-              </h1>
-            </div>
+          <div className="bg-[#00ADB5] group hover:text-[#00ADB5] hover:bg-white font-bold transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl w-[130px] object-cover border border-black justify-center h-[130px]">
+            <FaWordpress
+              size={45}
+              className="group-hover:rotate-[360deg] transition-transform"
+            />
+            Wordpress
           </div>
-          <div className="">
-            <div className="bg-white group transition duration-300 text-center flex flex-col items-center rounded-lg shadow-md hover:scale-105 shadow-black hover:shadow-xl hover:bg-slate-100 w-[150px] object-cover border border-black justify-center h-[150px]">
-              {/* <img
-          className="w-[4.9rem] h-15"
-          src={`https://www.freeiconspng.com/thumbs/movie-icon/movie-icon-6.png`}
-          alt="logo"
-        /> */}
-              {/* <BiCameraMovie
-            size={45}
-            className="group-hover:rotate-[360deg] transition-transform"
-          /> */}
-              <h1 className="text-[22px] text-center font-bold text-[#000] mt-3">
-                Movies
-              </h1>
-            </div>
+          <div className="bg-[#00ADB5] group hover:text-[#00ADB5] hover:bg-white font-bold transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl w-[130px] object-cover border border-black justify-center h-[130px]">
+            <FaNodeJs
+              size={45}
+              className="group-hover:rotate-[360deg] transition-transform"
+            />
+            NodeJs
           </div>
-          <div className="">
-            <div className="bg-white group transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl hover:bg-slate-100 w-[150px] object-cover border border-black justify-center h-[150px]">
-              {/* <img
-          className="w-[6.4rem] h-13"
-          src={`https://img.freepik.com/premium-vector/upcoming-events-announcement-megaphone-label-loudspeaker-speech-bubble_123447-5297.jpg`}
-          alt="logo"
-        /> */}
-              {/* <BiCalendarEvent
-            size={45}
-            className="group-hover:rotate-[360deg] transition-transform"
-          /> */}
-
-              <h1 className="text-[22px] text-center font-bold text-[#000] mt-3">
-                Events
-              </h1>
-            </div>
+          <div className="bg-[#00ADB5] group hover:text-[#00ADB5] hover:bg-white font-bold transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl w-[130px] object-cover border border-black justify-center h-[130px]">
+            <FaNodeJs
+              size={45}
+              className="group-hover:rotate-[360deg] transition-transform"
+            />
+            NodeJs
           </div>
-          <button
-            type="submit"
-            className=" rounded-md bg-[#cc9724] my-5 mt-12 px-7 py-4 text-[20px] self-center text-white shadow-sm hover:bg-[#cc9724]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          >
-            Get Started For Free
-          </button>
+          <div className="bg-[#00ADB5] group hover:text-[#00ADB5] hover:bg-white font-bold transition duration-300 text-center flex flex-col items-center rounded-lg hover:scale-105 shadow-md shadow-black hover:shadow-xl w-[130px] object-cover border border-black justify-center h-[130px]">
+            <FaNodeJs
+              size={45}
+              className="group-hover:rotate-[360deg] transition-transform"
+            />
+            NodeJs
+          </div>
         </div>
       </div>
     </section>
