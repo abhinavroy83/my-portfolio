@@ -42,7 +42,7 @@ export const CONFIG = {
 
   logo: [
     {
-      name: "Aashna",
+      name: "Abhinav Anand",
       url: "#home"
     }
   ],
